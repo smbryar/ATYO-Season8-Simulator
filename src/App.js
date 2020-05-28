@@ -3,12 +3,13 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 import InputData from './InputData/InputData';
 import SetData from './SetData/SetData';
-import Results from './Results/Results';
+import RunSimulation from './Results/RunSimulation';
 import AddedData from './AddedData/AddedData';
 import { initialMatchingCeremonies, initialTruthBooths, initialContestants } from './AYTOSolver/initialState/inputInformation';
 import { manyRuns } from './AYTOSolver/AYTOSolver';
 import Header from './Header/Header';
 import { doesPairMatch } from './AYTOSolver/alterState/utilities';
+import ResultsDetail from './Results/ResultsDetail';
 
 import './App.css';
 
@@ -44,16 +45,22 @@ function App() {
       <SetData matchingCeremonies={matchingCeremonies} truthBooths={truthBooths} />
       <Header>Simulation</Header>
       <Row className="ml-3 mr-3 mb-3">
-        <Col xs={12} sm={6} lg={3}>
+        <Col xs={12} sm={6} lg={4}>
           <InputData contestants={contestants} addTruthBooth={addTruthBooth} truthBooths={truthBooths} />
         </Col>
-        <Col xs={12} sm={6} lg={3} >
+        <Col xs={12} sm={6} lg={4} >
           <AddedData addedTruthBooths={addedTruthBooths} />
         </Col>
-        <Col>
-          <Results runSimulation={runSimulation} simulationResults={simulationResults} />
+        <Col xs={12} lg={4}>
+          <RunSimulation runSimulation={runSimulation} />
         </Col>
       </Row>
+      {simulationResults && 
+      <>
+        <Header>Results</Header>
+        <ResultsDetail simulationResults = {simulationResults}/> 
+        </>    
+      }
     </Container>
   );
 }
