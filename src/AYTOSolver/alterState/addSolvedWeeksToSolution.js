@@ -2,16 +2,11 @@ const { lockInPair } = require('./lockInPair');
 
 
 function addSolvedWeeksToSolution(matchingCeremonies, solution, remainingContestants) {
-    let correctPairs = [];
     for (let i = 0; i < matchingCeremonies.length; i++) {
         if (matchingCeremonies[i].lights === matchingCeremonies[i].pairs.length) {
-            for (let j = 0; j < matchingCeremonies[i].pairs.length; j++) {
-                correctPairs.push(matchingCeremonies[i].pairs[j]);                
-            }
+            lockInPair(matchingCeremonies[i].pairs[0], matchingCeremonies, solution, remainingContestants)
+            return;
         }
-    }
-    for (let i=0; i < correctPairs.length; i++) {
-        lockInPair(correctPairs[i], matchingCeremonies, solution, remainingContestants)
     }
 }
 
