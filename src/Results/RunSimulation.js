@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { Button, Form, Row, Col } from 'react-bootstrap';
+import { Button, Form} from 'react-bootstrap';
 import './Results.css'
-import ResultsDetail from './ResultsDetail';
 
 function RunSimulation(props) {
   const [runs, setRuns] = useState(10);

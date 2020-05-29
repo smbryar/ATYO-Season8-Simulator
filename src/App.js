@@ -33,6 +33,12 @@ function App() {
     }
   }
 
+  function deletePair(id) {
+    const updatedAddedTruthBooths = [...addedTruthBooths]
+    updatedAddedTruthBooths.splice(id,1);
+    setAddedTruthBooths(updatedAddedTruthBooths);
+  }
+
   function runSimulation(runs) {
     let allTruthBooths = [...truthBooths, ...addedTruthBooths];
     let results = manyRuns(runs, contestants, allTruthBooths, matchingCeremonies);
@@ -49,7 +55,7 @@ function App() {
           <InputData contestants={contestants} addTruthBooth={addTruthBooth} truthBooths={truthBooths} />
         </Col>
         <Col xs={12} sm={6} lg={4} >
-          <AddedData addedTruthBooths={addedTruthBooths} />
+          <AddedData addedTruthBooths={addedTruthBooths} deletePair = {deletePair}/>
         </Col>
         <Col xs={12} lg={4}>
           <RunSimulation runSimulation={runSimulation} />
