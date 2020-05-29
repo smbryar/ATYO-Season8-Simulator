@@ -41,7 +41,7 @@ function InputData(props) {
     <div className="input-data">
     <Form className="m-2">
       
-      <h5>Add a truth booth couple</h5>
+      <h4>Add a truth booth couple</h4>
       <PersonSelector number="1" contestants={props.contestants}>{setPerson1}</PersonSelector>
       <PersonSelector number="2" contestants={props.contestants}>{setPerson2}</PersonSelector>
       <Form.Group controlId="selectMatch">

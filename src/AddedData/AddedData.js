@@ -11,7 +11,7 @@ function AddedData(props) {
     return (
         <div className="added-data">
             <div className = "m-2">
-                <h5>Added Truth Booths</h5>
+                <h4>Added Truth Booths</h4>
                 <Table bordered size="sm">
                     <tbody>
                         {props.addedTruthBooths.map((booth,i) => (

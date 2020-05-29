@@ -36,5 +36,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://smbryar.github.io/AYTO-Season8-Simulator"
+  "homepage": "https://smbryar.github.io/AYTO-Season8-Simulator",
+  "devDependencies": {
+    "jest": "^26.0.1"
+  }
 }
