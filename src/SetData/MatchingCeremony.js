@@ -8,7 +8,7 @@ function MatchingCeremony(props) {
             <div className="matching-ceremony">
                 <h6>Matching Ceremony</h6>
                 <p>{props.matchingCeremony.lights} lights</p>
-                <Table bordered size="sm" className="m-2 matching-table">
+                <Table bordered size="sm" className="m-2 matching-table" style={props.matchingCeremony.lights === 0 ? {backgroundColor: "rgb(211, 144, 144)"} : null}>
                     <tbody>
                         {props.matchingCeremony.pairs.map((pair,i) => (
                             <tr key={i}>
