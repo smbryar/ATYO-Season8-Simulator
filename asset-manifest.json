@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/AYTO-Season8-Simulator/static/css/main.712d03e9.chunk.css",
-    "main.js": "/AYTO-Season8-Simulator/static/js/main.aabdf309.chunk.js",
-    "main.js.map": "/AYTO-Season8-Simulator/static/js/main.aabdf309.chunk.js.map",
+    "main.js": "/AYTO-Season8-Simulator/static/js/main.d2ab52be.chunk.js",
+    "main.js.map": "/AYTO-Season8-Simulator/static/js/main.d2ab52be.chunk.js.map",
     "runtime-main.js": "/AYTO-Season8-Simulator/static/js/runtime-main.650e8838.js",
     "runtime-main.js.map": "/AYTO-Season8-Simulator/static/js/runtime-main.650e8838.js.map",
-    "static/js/2.3cd54805.chunk.js": "/AYTO-Season8-Simulator/static/js/2.3cd54805.chunk.js",
-    "static/js/2.3cd54805.chunk.js.map": "/AYTO-Season8-Simulator/static/js/2.3cd54805.chunk.js.map",
+    "static/js/2.0a8bd9e2.chunk.js": "/AYTO-Season8-Simulator/static/js/2.0a8bd9e2.chunk.js",
+    "static/js/2.0a8bd9e2.chunk.js.map": "/AYTO-Season8-Simulator/static/js/2.0a8bd9e2.chunk.js.map",
     "index.html": "/AYTO-Season8-Simulator/index.html",
-    "precache-manifest.9aad1ddc310887e17d0902b4eee05dc7.js": "/AYTO-Season8-Simulator/precache-manifest.9aad1ddc310887e17d0902b4eee05dc7.js",
+    "precache-manifest.d4fcfa9f6aa2d37175b9478ba97711c0.js": "/AYTO-Season8-Simulator/precache-manifest.d4fcfa9f6aa2d37175b9478ba97711c0.js",
     "service-worker.js": "/AYTO-Season8-Simulator/service-worker.js",
     "static/css/main.712d03e9.chunk.css.map": "/AYTO-Season8-Simulator/static/css/main.712d03e9.chunk.css.map",
-    "static/js/2.3cd54805.chunk.js.LICENSE.txt": "/AYTO-Season8-Simulator/static/js/2.3cd54805.chunk.js.LICENSE.txt"
+    "static/js/2.0a8bd9e2.chunk.js.LICENSE.txt": "/AYTO-Season8-Simulator/static/js/2.0a8bd9e2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.650e8838.js",
-    "static/js/2.3cd54805.chunk.js",
+    "static/js/2.0a8bd9e2.chunk.js",
     "static/css/main.712d03e9.chunk.css",
-    "static/js/main.aabdf309.chunk.js"
+    "static/js/main.d2ab52be.chunk.js"
   ]
 }
