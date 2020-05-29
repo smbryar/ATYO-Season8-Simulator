@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/AYTO-Season8-Simulator/static/css/main.712d03e9.chunk.css",
-    "main.js": "/AYTO-Season8-Simulator/static/js/main.25b09f0b.chunk.js",
-    "main.js.map": "/AYTO-Season8-Simulator/static/js/main.25b09f0b.chunk.js.map",
+    "main.js": "/AYTO-Season8-Simulator/static/js/main.0ab28ff1.chunk.js",
+    "main.js.map": "/AYTO-Season8-Simulator/static/js/main.0ab28ff1.chunk.js.map",
     "runtime-main.js": "/AYTO-Season8-Simulator/static/js/runtime-main.650e8838.js",
     "runtime-main.js.map": "/AYTO-Season8-Simulator/static/js/runtime-main.650e8838.js.map",
     "static/js/2.0a8bd9e2.chunk.js": "/AYTO-Season8-Simulator/static/js/2.0a8bd9e2.chunk.js",
     "static/js/2.0a8bd9e2.chunk.js.map": "/AYTO-Season8-Simulator/static/js/2.0a8bd9e2.chunk.js.map",
     "index.html": "/AYTO-Season8-Simulator/index.html",
-    "precache-manifest.31b43ef270c662c9ad50421ebf4d9707.js": "/AYTO-Season8-Simulator/precache-manifest.31b43ef270c662c9ad50421ebf4d9707.js",
+    "precache-manifest.d8537cc46c488df9603a920a8adf9420.js": "/AYTO-Season8-Simulator/precache-manifest.d8537cc46c488df9603a920a8adf9420.js",
     "service-worker.js": "/AYTO-Season8-Simulator/service-worker.js",
     "static/css/main.712d03e9.chunk.css.map": "/AYTO-Season8-Simulator/static/css/main.712d03e9.chunk.css.map",
     "static/js/2.0a8bd9e2.chunk.js.LICENSE.txt": "/AYTO-Season8-Simulator/static/js/2.0a8bd9e2.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.650e8838.js",
     "static/js/2.0a8bd9e2.chunk.js",
     "static/css/main.712d03e9.chunk.css",
-    "static/js/main.25b09f0b.chunk.js"
+    "static/js/main.0ab28ff1.chunk.js"
   ]
 }
