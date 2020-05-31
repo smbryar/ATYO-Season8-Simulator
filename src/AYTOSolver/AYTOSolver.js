@@ -3,7 +3,7 @@ const { removeZeroLightsWeeks } = require('./alterState/removeZeroLightsWeeks');
 const { areThereInvalidWeeks, checkForSolvedWeeks, addSolvedWeeksToSolution } = require('./alterState/addSolvedWeeksToSolution');
 const { addCeremonyPairToSolution } = require('./alterState/addCeremonyPairToSolution');
 const { addContestantPairToSolution } = require('./alterState/addContestantPairToSolution');
-const { pairProbabilities, solutionProbabilities } = require('./analysis/analysis');
+const { pairProbabilities, solutionProbabilities, remainingMatches } = require('./analysis/analysis');
 
 
 function AYTOSolver(initialContestants, initialTruthBooths, initialMatchingCeremonies) {
@@ -46,15 +46,10 @@ function manyRuns(runs, initialContestants, initialTruthBooths, initialMatchingC
         else { possibleSolutions.push(result) }
     }
 
-    const pairProbs = pairProbabilities(possibleSolutions);
     const solutionProbs = solutionProbabilities(possibleSolutions);
     const distinctOptions = Object.keys(solutionProbs).length;
-    
-    // console.log(pairProbs);
-    // console.log(solutionProbs);
-    // console.log(distinctOptions);
-    // console.log((runs - incorrect) / runs);
-    return {solutions: solutionProbs, number: distinctOptions};
+    const matches = remainingMatches(possibleSolutions);
+    return {solutions: solutionProbs, number: distinctOptions, matches: matches};
 }
 
 module.exports = {

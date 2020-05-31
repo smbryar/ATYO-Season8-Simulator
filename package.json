@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.5.0",
@@ -16,7 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest src/tests/initialiseState.test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
@@ -36,8 +35,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://smbryar.github.io/AYTO-Season8-Simulator",
-  "devDependencies": {
-    "jest": "^26.0.1"
-  }
+  "homepage": "https://smbryar.github.io/AYTO-Season8-Simulator"
 }

@@ -36,5 +36,22 @@ function solutionProbabilities(possibleSolutions) {
     }, {})
 }
 
+function remainingMatches(possibleSolutions) {
+    return possibleSolutions.reduce((finalObj, solution) => {
+        return solution.reduce((obj, pair) => {
+            for (let i=0; i<pair.length; i++) {
+                let match = pair[(i+1)%2];
+            if (obj[pair[i]]) {obj[pair[i]].add(match)}
+            else {
+                obj[pair[i]] = new Set ();
+                obj[pair[i]].add(match);
+            }
+          }
+          return obj;
+        }, finalObj)
+    }, {})
+}
+
 exports.pairProbabilities = pairProbabilities;
 exports.solutionProbabilities = solutionProbabilities;
+exports.remainingMatches = remainingMatches;

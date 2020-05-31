@@ -9,7 +9,7 @@ function copyMatchingCeremonies (ceremonies) {
     })
 }
 
-export function initialiseState (initialContestants,initialTruthBooths,initialMatchingCeremonies) {
+function initialiseState (initialContestants,initialTruthBooths,initialMatchingCeremonies) {
     let solution = [];
 
     let remainingContestants = initialContestants.slice();
@@ -24,4 +24,8 @@ export function initialiseState (initialContestants,initialTruthBooths,initialMa
     }
 
     return {remainingContestants, knownFalses, knownTrues, matchingCeremonies, solution}
+}
+
+module.exports = {
+    initialiseState
 }
