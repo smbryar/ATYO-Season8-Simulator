@@ -29,6 +29,9 @@ const initialMatchingCeremonies = [
     {
         week:5, lights: 0, pairs: [["Aasha", "Kai"], ["Amber", "Nour"], ["Basit", "Remy"], ["Brandon", "Max"],
         ["Danny", "Kari"], ["Jasmine", "Paige"], ["Jenna", "Kylie"], ["Jonathan", "Justin"]]
+    },
+    {
+        week:5, lights: 0, pairs: []
     }];
 
     module.exports = {
