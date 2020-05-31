@@ -5,7 +5,8 @@ const initialTruthBooths = [
     {pair:["Brandon", "Remy"], correct:false},
     {pair:["Jenna", "Kai"], correct:false},
     {pair:["Jenna", "Danny"], correct:false},
-    {pair:["Kari", "Kylie"], correct:false}]
+    {pair:["Kari", "Kylie"], correct:false},
+    {pair:["Aasha", "Brandon"], correct:true}]
 
 
 const initialMatchingCeremonies = [
