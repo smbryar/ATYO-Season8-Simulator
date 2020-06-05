@@ -46,7 +46,8 @@ const initialMatchingCeremonies = [
         ["Kai","Remy"],["Jenna","Kari"],["Amber","Paige"],["Brandon","Aasha"]]
     },
     {
-        week:8, lights: 0, pairs: []
+        week:8, lights: 6, pairs: [["Basit", "Jonathan"], ["Jasmine", "Nour"],["Jenna", "Paige"], ["Brandon", "Aasha"],
+        ["Danny","Kai"], ["Amber","Kylie"], ["Remy","Justin"], ["Max","Kari"] ]
     }
 ];
 
