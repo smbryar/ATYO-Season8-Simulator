@@ -9,7 +9,8 @@ const initialTruthBooths = [
     {pair:["Aasha", "Brandon"], correct:true},
     {pair:["Jasmine", "Jenna"], correct:false},
     {pair:["Remy", "Paige"], correct:false},
-    {pair:["Max", "Amber"], correct:false}]
+    {pair:["Max", "Amber"], correct:false},
+    {pair:["Amber", "Kylie"], correct:false}]
 
 
 const initialMatchingCeremonies = [
@@ -46,8 +47,12 @@ const initialMatchingCeremonies = [
         ["Kai","Remy"],["Jenna","Kari"],["Amber","Paige"],["Brandon","Aasha"]]
     },
     {
-        week:8, lights: 6, pairs: [["Basit", "Jonathan"], ["Jasmine", "Nour"],["Jenna", "Paige"], ["Brandon", "Aasha"],
+        week:9, lights: 6, pairs: [["Basit", "Jonathan"], ["Jasmine", "Nour"],["Jenna", "Paige"], ["Brandon", "Aasha"],
         ["Danny","Kai"], ["Amber","Kylie"], ["Remy","Justin"], ["Max","Kari"] ]
+    },
+    {
+        week:10, lights: 5, pairs: [["Basit", "Jonathan"], ["Jasmine", "Nour"],["Jenna", "Paige"], ["Brandon", "Aasha"],
+        ["Danny","Kai"], ["",""], ["",""], ["",""] ]
     }
 ];
 
