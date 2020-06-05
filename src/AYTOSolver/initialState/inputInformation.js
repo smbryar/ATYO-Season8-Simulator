@@ -6,7 +6,10 @@ const initialTruthBooths = [
     {pair:["Jenna", "Kai"], correct:false},
     {pair:["Jenna", "Danny"], correct:false},
     {pair:["Kari", "Kylie"], correct:false},
-    {pair:["Aasha", "Brandon"], correct:true}]
+    {pair:["Aasha", "Brandon"], correct:true},
+    {pair:["Jasmine", "Jenna"], correct:false},
+    {pair:["Remy", "Paige"], correct:false},
+    {pair:["Max", "Amber"], correct:false}]
 
 
 const initialMatchingCeremonies = [
@@ -31,9 +34,21 @@ const initialMatchingCeremonies = [
         ["Danny", "Kari"], ["Jasmine", "Paige"], ["Jenna", "Kylie"], ["Jonathan", "Justin"]]
     },
     {
-        week:5, lights: 3, pairs: [["Jenna","Amber"],["Basit","Jonathan"],["Jasmine","Kylie"],["Danny","Kai"],
+        week:6, lights: 3, pairs: [["Jenna","Amber"],["Basit","Jonathan"],["Jasmine","Kylie"],["Danny","Kai"],
         ["Paige","Kari"],["Nour","Remy"],["Brandon","Aasha"],["Max","Justin"]]
-    }];
+    },
+    {
+        week:7, lights: 3, pairs: [["Basit", "Jonathan"], ["Kari", "Remy"], ["Justin", "Max"], ["Kai", "Jasmine"], 
+        ["Kylie","Nour"],["Paige","Jenna"],["Amber","Danny"],["Brandon","Aasha"]]
+    },
+    {
+        week:8, lights: 3, pairs: [["Basit", "Jonathan"], ["Jasmine", "Nour"], ["Max", "Justin"], ["Kylie", "Danny"], 
+        ["Kai","Remy"],["Jenna","Kari"],["Amber","Paige"],["Brandon","Aasha"]]
+    },
+    {
+        week:8, lights: 0, pairs: []
+    }
+];
 
     module.exports = {
         initialContestants,
