@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+import Season1 from './Season1/Season1';
 import Season8 from './Season 8/Season8';
 import NavBar from './NavBar/NavBar';
 
@@ -17,6 +18,11 @@ function App() {
       <div className="App">
         <NavBar seasons={seasons} activeSeasons={activeSeasons}/>
         <Switch>
+          <Route path="/season1">
+            <Container fluid>
+              <Season1/>
+            </Container>
+          </Route>
           <Route path="/season8">
             <Container fluid>
               <Season8/>

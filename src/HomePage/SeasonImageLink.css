@@ -19,3 +19,8 @@
     color: rgb(161, 170, 180);
     opacity: 0.5;
 }
+
+.group {
+    max-width: 300px;
+    padding: 10px;
+}
