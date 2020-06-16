@@ -54,7 +54,7 @@ function App() {
       <Header>Simulation</Header>
       <Row className="ml-3 mr-3 mb-3">
         <Col xs={12} sm={6} lg={4}>
-          <InputData contestants={contestants} addTruthBooth={addTruthBooth} truthBooths={truthBooths} />
+          <InputData contestants={contestants} addTruthBooth={addTruthBooth} truthBooths={truthBooths} week ={week}/>
         </Col>
         <Col xs={12} sm={6} lg={4} >
           <AddedData addedTruthBooths={addedTruthBooths} deletePair = {deletePair}/>

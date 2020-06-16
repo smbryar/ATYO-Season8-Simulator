@@ -20,13 +20,14 @@ function InputData(props) {
   function handleAddTruthBoothClick() {
     let pair = [person1, person2];
     let newTruthBooth = { pair: pair, correct: result };
+    let truthBoothsKnown = props.truthBooths.filter(booth => booth.week <= props.week);
     
     if (person1 === person2) {
       let updatedError = Object.assign({},error);
       updatedError.samePerson = true;
       setError(updatedError);
     }
-    else if  (props.truthBooths.some(booth => doesPairMatch(booth.pair, pair))) {
+    else if  (truthBoothsKnown.some(booth => doesPairMatch(booth.pair, pair))) {
       let updatedError = Object.assign({},error);
       updatedError.hardCoded = true;
       setError(updatedError);
