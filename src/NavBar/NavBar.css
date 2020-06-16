@@ -1,0 +1,23 @@
+.brand--AYTO {
+    font-size: 1.8em;
+}
+
+.navbar--AYTO {
+    background-color: #BADEC6;
+}
+
+.navlink--AYTO {
+    font-size: 1.1em;
+    color: black;
+}
+
+.navlink--AYTO:hover {
+    color: slategray;
+    text-decoration: none;
+}
+
+.navlink--AYTO:active {
+    color: slategray;
+    text-shadow: 1px 1px white;
+    text-decoration: none;
+}
