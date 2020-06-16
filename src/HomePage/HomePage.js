@@ -4,9 +4,7 @@ import { Row, Container, Jumbotron } from 'react-bootstrap';
 import './HomePage.css';
 import SeasonImageLink from './SeasonImageLink';
 
-function HomePage() {
-    const seasons = [1,2,3,4,5,6,7,8];
-
+function HomePage(props) {
     return (
         <>
             <Jumbotron className="my-5 p-4">
@@ -17,8 +15,8 @@ function HomePage() {
             </Jumbotron>
             <Container fluid>
                 <Row>
-                    {seasons.map(season => (
-                        <SeasonImageLink season={season}/>
+                    {props.seasons.map(season => (
+                        <SeasonImageLink season={season} activeSeasons={props.activeSeasons}/>
                     ))}
                 </Row>
             </Container>

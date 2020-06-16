@@ -9,11 +9,13 @@ import './App.css';
 import HomePage from './HomePage/HomePage';
 
 function App() {
+  const seasons = [1,2,3,4,5,6,7,8];
+  const activeSeasons = [8];
 
   return (
     <Router>
       <div className="App">
-        <NavBar />
+        <NavBar seasons={seasons} activeSeasons={activeSeasons}/>
         <Switch>
           <Route path="/season8">
             <Container fluid>
@@ -22,7 +24,7 @@ function App() {
           </Route>
           <Route path="/">
             <Container fluid>
-              <HomePage/>
+              <HomePage seasons={seasons} activeSeasons={activeSeasons}/>
             </Container>
           </Route>
         </Switch>

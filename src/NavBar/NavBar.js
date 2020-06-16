@@ -3,7 +3,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 
-function NavBar() {
+function NavBar(props) {
     const [expanded, setExpanded] = useState(false);
     return (
         <Navbar className="navbar--AYTO" expand="sm" fixed="top" expanded={expanded}>
@@ -12,7 +12,9 @@ function NavBar() {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav onClick={() => setExpanded(false)}>
                     <Link className="px-3 navlink--AYTO" to="/" >Home</Link>
-                    <Link className="px-3 navlink--AYTO" to="/season8" >Season 8</Link>
+                    {props.seasons.map(season => (
+                    <Link className={`px-3 navlink--AYTO ${!props.activeSeasons.includes(season) ? "disabled-link" : ""}`} to={`/season${season}`} >Season {season}</Link>
+                    ))}
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

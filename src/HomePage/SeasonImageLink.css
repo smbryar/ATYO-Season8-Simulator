@@ -13,3 +13,9 @@
     text-shadow: 1px 1px white;
     text-decoration: none;
 }
+
+.disabled-link {
+    pointer-events: none;
+    color: rgb(161, 170, 180);
+    opacity: 0.5;
+}
