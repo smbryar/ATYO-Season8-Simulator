@@ -9,13 +9,7 @@ function removePair(pair, matchingCeremonies, trues) {
 }
 
 function doesPairMatch (pair1, pair2) {
-    if (pair1.length !== pair2.length) return false;
-    const sortedPair1 = pair1.sort();
-    const sortedPair2 = pair2.sort();
-    for (let i = 0; i < sortedPair1.length; i++) {
-        if (sortedPair1[i] !== sortedPair2[i]) return false;
-    }
-    return true;
+    return pair1.woman === pair2.woman && pair1.man === pair2.man;
 };
 
 module.exports = {

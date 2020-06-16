@@ -10,30 +10,33 @@ import { manyRuns } from './AYTOSolver/AYTOSolver';
 import Header from './Header/Header';
 import { doesPairMatch } from './AYTOSolver/alterState/utilities';
 import ResultsDetail from './Results/ResultsDetail';
+import {copyContestants, copyMatchingCeremonies, copyTruthBooths} from './AYTOSolver/initialState/initialiseState';
 
 function Season1() {
-  const truthBooths = [...initialTruthBooths];
+  
+  const truthBooths = copyTruthBooths(initialTruthBooths);
   const [addedTruthBooths, setAddedTruthBooths] = useState([]);
-  const matchingCeremonies = [...initialMatchingCeremonies];
-  const contestants = Object.assign({},initialContestants);
+  const matchingCeremonies = copyMatchingCeremonies(initialMatchingCeremonies);
+  const contestants = copyContestants(initialContestants);
   const [simulationResults, setSimulationResults] = useState();
   const [week, setWeek] = useState(0);
 
   function addTruthBooth(newTruthBooth) {
-    let index = addedTruthBooths.findIndex(booth => doesPairMatch(booth.pair, newTruthBooth.pair));
+    let index = addedTruthBooths.findIndex(booth => doesPairMatch(booth, newTruthBooth));
     if (index === -1) {
-      const updatedAddedTruthBooths = [...addedTruthBooths, newTruthBooth];
+      let updatedAddedTruthBooths = copyTruthBooths(addedTruthBooths);
+      updatedAddedTruthBooths.push(newTruthBooth);
       setAddedTruthBooths(updatedAddedTruthBooths);
     }
     else {
-      let updatedAddedTruthBooths = [...addedTruthBooths];
+      let updatedAddedTruthBooths = copyTruthBooths(addedTruthBooths);
       updatedAddedTruthBooths[index].correct = newTruthBooth.correct;
       setAddedTruthBooths(updatedAddedTruthBooths);
     }
   }
 
   function deletePair(id) {
-    const updatedAddedTruthBooths = [...addedTruthBooths]
+    const updatedAddedTruthBooths = copyTruthBooths(addedTruthBooths);
     updatedAddedTruthBooths.splice(id,1);
     setAddedTruthBooths(updatedAddedTruthBooths);
   }
