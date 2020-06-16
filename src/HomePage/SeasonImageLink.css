@@ -1,0 +1,15 @@
+.season-link {
+    font-size: 1.2em;
+    color: black;
+}
+
+.season-link:hover {
+    color: slategray;
+    text-decoration: none;
+}
+
+.season-link:active {
+    color: slategray;
+    text-shadow: 1px 1px white;
+    text-decoration: none;
+}

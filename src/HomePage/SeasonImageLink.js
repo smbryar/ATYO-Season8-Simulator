@@ -1,13 +1,15 @@
 import React from 'react';
-import {Col, Image } from 'react-bootstrap';
+import { Col, Image } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
-import './HomePage.css';
+import './SeasonImageLink.css';
 
 function SeasonImageLink(props) {
     return (
-        <Col>
-            <h3>{props.children}</h3>
-            <Image src={require(`./GroupPhotos/${props.season}.jpg`)} rounded fluid className="group" />
+        <Col className="m-2">
+            <Link className="season-link" to={`/season${props.season}`}>Season {props.season}
+                <Image src={require(`./GroupPhotos/${props.season}.jpg`)} rounded fluid className="group" />
+            </Link>
         </Col>
     );
 }

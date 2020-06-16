@@ -18,7 +18,7 @@ function HomePage() {
             <Container fluid>
                 <Row>
                     {seasons.map(season => (
-                        <SeasonImageLink season={season}>Season {season}</SeasonImageLink>
+                        <SeasonImageLink season={season}/>
                     ))}
                 </Row>
             </Container>
