@@ -1,16 +1,16 @@
 const initialContestants = ["Aasha", "Amber", "Basit", "Brandon", "Danny", "Jasmine", "Jenna", "Jonathan", "Justin", "Kai", "Kari", "Kylie", "Max", "Nour", "Paige", "Remy"];
 
 const initialTruthBooths = [
-    {pair:["Justin", "Nour"], correct:false},
-    {pair:["Brandon", "Remy"], correct:false},
-    {pair:["Jenna", "Kai"], correct:false},
-    {pair:["Jenna", "Danny"], correct:false},
-    {pair:["Kari", "Kylie"], correct:false},
-    {pair:["Aasha", "Brandon"], correct:true},
-    {pair:["Jasmine", "Jenna"], correct:false},
-    {pair:["Remy", "Paige"], correct:false},
-    {pair:["Max", "Amber"], correct:false},
-    {pair:["Amber", "Kylie"], correct:false}]
+    {week:1, pair:["Justin", "Nour"], correct:false},
+    {week:2, pair:["Brandon", "Remy"], correct:false},
+    {week:3, pair:["Jenna", "Kai"], correct:false},
+    {week:4, pair:["Jenna", "Danny"], correct:false},
+    {week:5, pair:["Kari", "Kylie"], correct:false},
+    {week:6, pair:["Aasha", "Brandon"], correct:true},
+    {week:7, pair:["Jasmine", "Jenna"], correct:false},
+    {week:8, pair:["Remy", "Paige"], correct:false},
+    {week:9, pair:["Max", "Amber"], correct:false},
+    {week:10, pair:["Amber", "Kylie"], correct:false}]
 
 
 const initialMatchingCeremonies = [
@@ -51,8 +51,8 @@ const initialMatchingCeremonies = [
         ["Danny","Kai"], ["Amber","Kylie"], ["Remy","Justin"], ["Max","Kari"] ]
     },
     {
-        week:10, lights: 5, pairs: [["Basit", "Jonathan"], ["Jasmine", "Nour"],["Jenna", "Paige"], ["Brandon", "Aasha"],
-        ["Danny","Kai"], ["",""], ["",""], ["",""] ]
+        week:10, lights: 8, pairs: [["Basit", "Jonathan"], ["Jasmine", "Nour"],["Jenna", "Paige"], ["Brandon", "Aasha"],
+        ["Danny","Kai"], ["Max","Kari"], ["Amber","Remy"], ["Justin","Kylie"] ]
     }
 ];
 
