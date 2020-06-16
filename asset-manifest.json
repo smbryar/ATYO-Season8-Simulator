@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/AYTO-Season8-Simulator/static/css/main.712d03e9.chunk.css",
-    "main.js": "/AYTO-Season8-Simulator/static/js/main.9921d9fd.chunk.js",
-    "main.js.map": "/AYTO-Season8-Simulator/static/js/main.9921d9fd.chunk.js.map",
+    "main.css": "/AYTO-Season8-Simulator/static/css/main.51fc3010.chunk.css",
+    "main.js": "/AYTO-Season8-Simulator/static/js/main.d6f31916.chunk.js",
+    "main.js.map": "/AYTO-Season8-Simulator/static/js/main.d6f31916.chunk.js.map",
     "runtime-main.js": "/AYTO-Season8-Simulator/static/js/runtime-main.650e8838.js",
     "runtime-main.js.map": "/AYTO-Season8-Simulator/static/js/runtime-main.650e8838.js.map",
-    "static/js/2.0a8bd9e2.chunk.js": "/AYTO-Season8-Simulator/static/js/2.0a8bd9e2.chunk.js",
-    "static/js/2.0a8bd9e2.chunk.js.map": "/AYTO-Season8-Simulator/static/js/2.0a8bd9e2.chunk.js.map",
+    "static/js/2.d9bd9e6c.chunk.js": "/AYTO-Season8-Simulator/static/js/2.d9bd9e6c.chunk.js",
+    "static/js/2.d9bd9e6c.chunk.js.map": "/AYTO-Season8-Simulator/static/js/2.d9bd9e6c.chunk.js.map",
     "index.html": "/AYTO-Season8-Simulator/index.html",
-    "precache-manifest.81acae624a6f0dce611e5f528f143f97.js": "/AYTO-Season8-Simulator/precache-manifest.81acae624a6f0dce611e5f528f143f97.js",
+    "precache-manifest.85b8d24d569012e6e8387f9be390285c.js": "/AYTO-Season8-Simulator/precache-manifest.85b8d24d569012e6e8387f9be390285c.js",
     "service-worker.js": "/AYTO-Season8-Simulator/service-worker.js",
-    "static/css/main.712d03e9.chunk.css.map": "/AYTO-Season8-Simulator/static/css/main.712d03e9.chunk.css.map",
-    "static/js/2.0a8bd9e2.chunk.js.LICENSE.txt": "/AYTO-Season8-Simulator/static/js/2.0a8bd9e2.chunk.js.LICENSE.txt"
+    "static/css/main.51fc3010.chunk.css.map": "/AYTO-Season8-Simulator/static/css/main.51fc3010.chunk.css.map",
+    "static/js/2.d9bd9e6c.chunk.js.LICENSE.txt": "/AYTO-Season8-Simulator/static/js/2.d9bd9e6c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.650e8838.js",
-    "static/js/2.0a8bd9e2.chunk.js",
-    "static/css/main.712d03e9.chunk.css",
-    "static/js/main.9921d9fd.chunk.js"
+    "static/js/2.d9bd9e6c.chunk.js",
+    "static/css/main.51fc3010.chunk.css",
+    "static/js/main.d6f31916.chunk.js"
   ]
 }
