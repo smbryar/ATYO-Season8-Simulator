@@ -1,0 +1,9 @@
+.home-page {
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+.group {
+    max-width: 300px;
+    padding: 10px;
+}

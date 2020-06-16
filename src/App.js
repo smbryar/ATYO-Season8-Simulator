@@ -6,6 +6,7 @@ import Season8 from './Season 8/Season8';
 import NavBar from './NavBar/NavBar';
 
 import './App.css';
+import HomePage from './HomePage/HomePage';
 
 function App() {
 
@@ -17,6 +18,11 @@ function App() {
           <Route path="/season8">
             <Container fluid>
               <Season8/>
+            </Container>
+          </Route>
+          <Route path="/">
+            <Container fluid>
+              <HomePage/>
             </Container>
           </Route>
         </Switch>
