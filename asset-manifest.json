@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/AYTO-Season8-Simulator/static/css/main.7c2aae08.chunk.css",
-    "main.js": "/AYTO-Season8-Simulator/static/js/main.f9de7ca4.chunk.js",
-    "main.js.map": "/AYTO-Season8-Simulator/static/js/main.f9de7ca4.chunk.js.map",
+    "main.css": "/AYTO-Season8-Simulator/static/css/main.b692e31d.chunk.css",
+    "main.js": "/AYTO-Season8-Simulator/static/js/main.0c73de13.chunk.js",
+    "main.js.map": "/AYTO-Season8-Simulator/static/js/main.0c73de13.chunk.js.map",
     "runtime-main.js": "/AYTO-Season8-Simulator/static/js/runtime-main.650e8838.js",
     "runtime-main.js.map": "/AYTO-Season8-Simulator/static/js/runtime-main.650e8838.js.map",
-    "static/js/2.29196b29.chunk.js": "/AYTO-Season8-Simulator/static/js/2.29196b29.chunk.js",
-    "static/js/2.29196b29.chunk.js.map": "/AYTO-Season8-Simulator/static/js/2.29196b29.chunk.js.map",
+    "static/js/2.c50d0aa8.chunk.js": "/AYTO-Season8-Simulator/static/js/2.c50d0aa8.chunk.js",
+    "static/js/2.c50d0aa8.chunk.js.map": "/AYTO-Season8-Simulator/static/js/2.c50d0aa8.chunk.js.map",
     "index.html": "/AYTO-Season8-Simulator/index.html",
-    "precache-manifest.46680c7eebf0c68b2f8e4378128d6b6a.js": "/AYTO-Season8-Simulator/precache-manifest.46680c7eebf0c68b2f8e4378128d6b6a.js",
+    "precache-manifest.5d5ecc8bd56e0918b6dc84fd87cfb16b.js": "/AYTO-Season8-Simulator/precache-manifest.5d5ecc8bd56e0918b6dc84fd87cfb16b.js",
     "service-worker.js": "/AYTO-Season8-Simulator/service-worker.js",
-    "static/css/main.7c2aae08.chunk.css.map": "/AYTO-Season8-Simulator/static/css/main.7c2aae08.chunk.css.map",
-    "static/js/2.29196b29.chunk.js.LICENSE.txt": "/AYTO-Season8-Simulator/static/js/2.29196b29.chunk.js.LICENSE.txt",
+    "static/css/main.b692e31d.chunk.css.map": "/AYTO-Season8-Simulator/static/css/main.b692e31d.chunk.css.map",
+    "static/js/2.c50d0aa8.chunk.js.LICENSE.txt": "/AYTO-Season8-Simulator/static/js/2.c50d0aa8.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/AYTO-Season8-Simulator/static/media/1.a25aaed7.jpg",
     "static/media/2.jpg": "/AYTO-Season8-Simulator/static/media/2.9e563561.jpg",
     "static/media/3.jpg": "/AYTO-Season8-Simulator/static/media/3.543939ba.jpg",
@@ -23,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.650e8838.js",
-    "static/js/2.29196b29.chunk.js",
-    "static/css/main.7c2aae08.chunk.css",
-    "static/js/main.f9de7ca4.chunk.js"
+    "static/js/2.c50d0aa8.chunk.js",
+    "static/css/main.b692e31d.chunk.css",
+    "static/js/main.0c73de13.chunk.js"
   ]
 }
