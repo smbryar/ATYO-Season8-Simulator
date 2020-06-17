@@ -13,7 +13,7 @@ function NavBar(props) {
                 <Nav onClick={() => setExpanded(false)}>
                     <Link className="px-3 navlink--AYTO" to="/" >Home</Link>
                     {props.seasons.map(season => (
-                    <Link className={`px-3 navlink--AYTO ${!props.activeSeasons.includes(season) ? "disabled-link" : ""}`} to={`/season${season}`} >Season {season}</Link>
+                    <Link key = {season} className={`px-3 navlink--AYTO ${!props.activeSeasons.includes(season) ? "disabled-link" : ""}`} to={`/season${season}`} >Season {season}</Link>
                     ))}
                 </Nav>
             </Navbar.Collapse>

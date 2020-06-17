@@ -9,8 +9,8 @@ function removeZeroLightsWeeks(knownFalses, matchingCeremonies) {
         }
     }
     toRemove.sort((a,b) => b - a);
-    for (let i = 0; i < toRemove.length; i++) {        
-        matchingCeremonies.splice(toRemove[i], 1);
+    for (let j = 0; j < toRemove.length; j++) {        
+        matchingCeremonies.splice(toRemove[j], 1);
     }
     removeKnownPairs(knownFalses, matchingCeremonies, false)
 }

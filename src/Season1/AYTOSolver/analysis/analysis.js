@@ -1,8 +1,7 @@
 function pairProbabilities(possibleSolutions) {
     return possibleSolutions.reduce((probabilitiesObj, solution) => {
         return solution.reduce((obj, pair) => {
-            let orderedPair = pair.sort();
-            let strPair = `${orderedPair[0]}-${orderedPair[1]}`;
+            let strPair = `${pair.woman}-${pair.man}`;
             if (obj[strPair]) {
                 obj[strPair] += 1
             }
@@ -17,8 +16,7 @@ function pairProbabilities(possibleSolutions) {
 function solutionProbabilities(possibleSolutions) {
     return possibleSolutions.reduce((obj, solution) => {
         let solutionNameArr =  solution.reduce((arr, pair) => {
-            let orderedPair = pair.sort();
-            let strPair = `${orderedPair[0]}-${orderedPair[1]}/`;
+            let strPair = `${pair.woman}-${pair.man}/`;
             arr.push(strPair);
             return arr
         },[])
@@ -39,13 +37,15 @@ function solutionProbabilities(possibleSolutions) {
 function remainingMatches(possibleSolutions) {
     return possibleSolutions.reduce((finalObj, solution) => {
         return solution.reduce((obj, pair) => {
-            for (let i=0; i<pair.length; i++) {
-                let match = pair[(i+1)%2];
-            if (obj[pair[i]]) {obj[pair[i]].add(match)}
-            else {
-                obj[pair[i]] = new Set ();
-                obj[pair[i]].add(match);
-            }
+          if (obj[pair.woman]) {obj[pair.woman].add(pair.man)}
+          else {
+            obj[pair.woman] = new Set ();
+            obj[pair.woman].add(pair.man);
+          }
+          if (obj[pair.man]) {obj[pair.man].add(pair.woman)}
+          else {
+            obj[pair.man] = new Set ();
+            obj[pair.man].add(pair.woman);
           }
           return obj;
         }, finalObj)

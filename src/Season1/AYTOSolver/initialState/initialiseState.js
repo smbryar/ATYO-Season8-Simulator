@@ -17,7 +17,7 @@ function copyContestants(contestants) {
 }
 
 function copyTruthBooths (truthBooths) {
-    return truthBooths.map(booth => booth = {week: booth.week, woman: booth.woman, man: booth.man})
+    return truthBooths.map(booth => booth = {week: booth.week, woman: booth.woman, man: booth.man, correct: booth.correct})
   }
 
 function initialiseState (initialContestants,initialTruthBooths,initialMatchingCeremonies) {

@@ -4,7 +4,7 @@ import './InputData.css'
 
 function PersonSelector(props) {
     return (
-        <Form.Group controlId={`select{props.gender}}`}>
+        <Form.Group controlId={`select${props.gender}}`}>
             <Form.Label>{props.gender}</Form.Label>
             <Form.Control as="select" custom onChange={e => props.children(e.target.value)}>
                 {props.gender === "Woman" ? props.contestants.women.map((person,i) => (

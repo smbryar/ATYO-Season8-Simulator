@@ -17,6 +17,7 @@ function ResultsDetail(props) {
 
       </div>
       <Table bordered size="sm">
+        <thead>
         <tr>
           <td>
             PERSON
@@ -25,6 +26,7 @@ function ResultsDetail(props) {
             POSSIBLE MATCHES
           </td>
         </tr>
+        </thead>        
         <tbody>
           {Object.keys(props.simulationResults.matches).map(person => (
             <tr>

@@ -50,7 +50,7 @@ const initialMatchingCeremonies = [
     {
         week: 6, lights: 5,
         pairs: [{ woman: "Amber", man: "Ethan" }, { woman: "Ashleigh", man: "Adam" }, { woman: "Brittany", man: "Chris S." }, 
-        { woman: "Coleysia", man: "Dillan" }, { woman: "Jacy", man: "John" }, { woman: "Jessica", man: "Chris S." }, 
+        { woman: "Coleysia", man: "Dillan" }, { woman: "Jacy", man: "John" }, { woman: "Jessica", man: "Ryan" }, 
         { woman: "Kayla", man: "Wes" }, { woman: "Paige", man: "Chris T." }, { woman: "Shanley", man: "Dre" }, { woman: "Simone", man: "Joey" }]
     },
     {

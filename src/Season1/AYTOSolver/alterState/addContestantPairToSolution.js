@@ -3,7 +3,6 @@ const { doesPairMatch } = require('./utilities');
 function addContestantPairToSolution(remainingContestants, knownFalses, solution) {
     let pair = choosePairFromContestants(remainingContestants, knownFalses);
     if (!pair) {
-        // console.log("Incorrect solution - choosing from contestant pool");
         return false;
     }
     solution.push(pair);
@@ -11,18 +10,16 @@ function addContestantPairToSolution(remainingContestants, knownFalses, solution
 }
 
 function choosePairFromContestants(remainingContestants, knownFalses) {
-    let contestant1 = chooseContestantFromContestants(remainingContestants);
-    let options = remainingContestants.filter(person => {
-        let trialPair = [contestant1, person];
+    let woman = chooseContestantFromContestants(remainingContestants.women);
+    let maleOptions = remainingContestants.men.filter(man => {
+        let trialPair = {woman, man};
         return !knownFalses.some(falsePair => doesPairMatch(falsePair, trialPair));
     })
-    if (options.length === 0) {
-        // console.log("Incorrect solution - choosing from contestants");
+    if (maleOptions.length === 0) {
         return false;
     }
-    let contestant2 = chooseContestantFromContestants(options);
-    remainingContestants.splice(remainingContestants.indexOf(contestant2), 1);
-    return [contestant1, contestant2]
+    let man = chooseContestantFromContestants(remainingContestants.men);
+    return {woman, man}
 }
 
 function chooseContestantFromContestants(pool) {
