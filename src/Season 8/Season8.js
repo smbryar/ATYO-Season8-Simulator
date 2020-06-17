@@ -10,6 +10,7 @@ import { manyRuns } from './AYTOSolver/AYTOSolver';
 import Header from './Header/Header';
 import { doesPairMatch } from './AYTOSolver/alterState/utilities';
 import ResultsDetail from './Results/ResultsDetail';
+import PageHeader from './PageHeader/PageHeader';
 
 function Season8() {
   const truthBooths = [...initialTruthBooths];
@@ -47,6 +48,7 @@ function Season8() {
 
   return (
     <Container fluid className="App">
+      <PageHeader season={8}/>
       <Header>Week by week data</Header>
       <SetData matchingCeremonies={matchingCeremonies} truthBooths={truthBooths} week = {week} setWeek={setWeek}/>
       <Header>Simulation</Header>

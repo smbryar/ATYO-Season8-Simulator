@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Jumbotron } from 'react-bootstrap';
 
 import InputData from './InputData/InputData';
 import SetData from './SetData/SetData';
@@ -11,6 +11,7 @@ import Header from './Header/Header';
 import { doesPairMatch } from './AYTOSolver/alterState/utilities';
 import ResultsDetail from './Results/ResultsDetail';
 import {copyContestants, copyMatchingCeremonies, copyTruthBooths} from './AYTOSolver/initialState/initialiseState';
+import PageHeader from './PageHeader/PageHeader';
 
 function Season1() {
   
@@ -50,6 +51,7 @@ function Season1() {
 
   return (
     <Container fluid className="App">
+      <PageHeader season = {1} />
       <Header>Week by week data</Header>
       <SetData matchingCeremonies={matchingCeremonies} truthBooths={truthBooths} week = {week} setWeek={setWeek}/>
       <Header>Simulation</Header>

@@ -11,7 +11,7 @@ import HomePage from './HomePage/HomePage';
 
 function App() {
   const seasons = [1,2,3,4,5,6,7,8];
-  const activeSeasons = [8];
+  const activeSeasons = [1,8];
 
   return (
     <Router>
