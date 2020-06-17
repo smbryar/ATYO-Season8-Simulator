@@ -37,11 +37,13 @@ function AYTOSolver(initialContestants, initialTruthBooths, initialMatchingCerem
 }
 
 function manyRuns(runs, initialContestants, initialTruthBooths, initialMatchingCeremonies) {
+    let incorrect = 0;
     let possibleSolutions = [];
 
     for (let i = 0; i < runs; i++) {
         let result = AYTOSolver(initialContestants, initialTruthBooths, initialMatchingCeremonies);
-        possibleSolutions.push(result);
+        if (!result) { incorrect += 1 }
+        else { possibleSolutions.push(result) }
     }
 
     const solutionProbs = solutionProbabilities(possibleSolutions);

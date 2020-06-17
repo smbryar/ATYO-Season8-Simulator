@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Jumbotron } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 import InputData from './InputData/InputData';
 import SetData from './SetData/SetData';

@@ -1,6 +1,6 @@
 const { lockInPair } = require('../alterState/lockInPair');
 
-function copyMatchingCeremonies (ceremonies) {
+export function copyMatchingCeremonies (ceremonies) {
     return ceremonies.map(ceremony => {
         return {
             week: ceremony.week,
@@ -10,17 +10,17 @@ function copyMatchingCeremonies (ceremonies) {
     })
 }
 
-function copyContestants(contestants) {
+export function copyContestants(contestants) {
     const women = [...contestants.women];
     const men = [...contestants.men];
     return {women, men};
 }
 
-function copyTruthBooths (truthBooths) {
+export function copyTruthBooths (truthBooths) {
     return truthBooths.map(booth => booth = {week: booth.week, woman: booth.woman, man: booth.man, correct: booth.correct})
   }
 
-function initialiseState (initialContestants,initialTruthBooths,initialMatchingCeremonies) {
+export function initialiseState (initialContestants,initialTruthBooths,initialMatchingCeremonies) {
     let solution = [];
     let remainingContestants = copyContestants(initialContestants);
     let knownTrues = initialTruthBooths.reduce((arr,booth) => booth.correct ? [...arr,{woman: booth.woman, man:booth.man}] : arr,[])
@@ -34,11 +34,4 @@ function initialiseState (initialContestants,initialTruthBooths,initialMatchingC
     }
 
     return {remainingContestants, knownFalses, knownTrues, matchingCeremonies, solution}
-}
-
-module.exports = {
-    initialiseState,
-    copyTruthBooths,
-    copyContestants,
-    copyMatchingCeremonies
 }
