@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/AYTO-Season8-Simulator/precache-manifest.5d5ecc8bd56e0918b6dc84fd87cfb16b.js"
+  "/AYTO-Season8-Simulator/precache-manifest.cc78b6b1abb8b1a8e9455cc1ceb4770d.js"
 );
 
 self.addEventListener('message', (event) => {
