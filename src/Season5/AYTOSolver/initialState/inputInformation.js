@@ -7,7 +7,8 @@ const initialTruthBooths = [
     { week: 1, woman: "Gianna", man: "Hayden", correct: false },
     { week: 2, woman: "Alicia", man: "Andre", correct: false },
     { week: 3, woman: "Carolina", man: "Ozzy", correct: false },
-    { week: 4, woman: "Tyranny", man: "Osvaldo", correct: false }]
+    { week: 4, woman: "Tyranny", man: "Osvaldo", correct: false },
+    { week: 5, woman: "Kam", man: "Edward", correct: true }]
 
 
 const initialMatchingCeremonies = [
@@ -38,6 +39,13 @@ const initialMatchingCeremonies = [
         { woman: "Gianna", man: "Derrick" }, { woman: "Hannah", man: "Ozzy" }, { woman: "Kam", man: "Mike" }, 
         { woman: "Kari", man: "Michael" }, { woman: "Kathryn", man: "Joey" }, { woman: "Shannon", man: "Tyler" }, 
         { woman: "Taylor", man: "Osvaldo" }, { woman: "Tyranny", man: "Jaylan" }]
+    },    
+    {
+        week: 5, lights: 4,
+        pairs: [{ woman: "Alicia", man: "Mike" }, { woman: "Carolina", man: "Hayden" }, { woman: "Cas", man: "Jaylan" }, 
+        { woman: "Gianna", man: "Osvaldo" }, { woman: "Hannah", man: "Ozzy" }, { woman: "Kam", man: "Edward" }, 
+        { woman: "Kari", man: "Michael" }, { woman: "Kathryn", man: "Joey" }, { woman: "Shannon", man: "Tyler" }, 
+        { woman: "Taylor", man: "Andre" }, { woman: "Tyranny", man: "Derrick" }]
     }
 ];
 
