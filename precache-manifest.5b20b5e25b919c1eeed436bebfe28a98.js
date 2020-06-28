@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "34018c8bd60405ec1083a0555fca3396",
+    "revision": "f38b57d4f6bd5546fb883c399795b177",
     "url": "/AYTO-Season8-Simulator/index.html"
   },
   {
-    "revision": "96e36269136a05443f9b",
+    "revision": "7e74a1e7783212de923e",
     "url": "/AYTO-Season8-Simulator/static/css/main.b692e31d.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AYTO-Season8-Simulator/static/js/2.c50d0aa8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "96e36269136a05443f9b",
-    "url": "/AYTO-Season8-Simulator/static/js/main.4498eaa8.chunk.js"
+    "revision": "7e74a1e7783212de923e",
+    "url": "/AYTO-Season8-Simulator/static/js/main.74aa284a.chunk.js"
   },
   {
     "revision": "3d9b08765f26656290ce",
