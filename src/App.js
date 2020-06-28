@@ -19,22 +19,22 @@ function App() {
       <div className="App">
         <NavBar seasons={seasons} activeSeasons={activeSeasons}/>
         <Switch>
-          <Route path="/season1">
+          <Route path="/AYTO-Season8-Simulator/season1">
             <Container fluid>
               <Season1/>
             </Container>
           </Route>
-          <Route path="/season5">
+          <Route path="/AYTO-Season8-Simulator/season5">
             <Container fluid>
               <Season5/>
             </Container>
           </Route>
-          <Route path="/season8">
+          <Route path="/AYTO-Season8-Simulator/season8">
             <Container fluid>
               <Season8/>
             </Container>
           </Route>
-          <Route path="/">
+          <Route exact path="/AYTO-Season8-Simulator">
             <Container fluid>
               <HomePage seasons={seasons} activeSeasons={activeSeasons}/>
             </Container>

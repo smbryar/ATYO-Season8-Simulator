@@ -7,7 +7,7 @@ import './SeasonImageLink.css';
 function SeasonImageLink(props) {
     return (
         <Col className="m-2">
-            <Link className={`season-link ${!props.activeSeasons.includes(props.season) ? "disabled-link" : ""}`} to={`/season${props.season}`}>Season {props.season}
+            <Link className={`season-link ${!props.activeSeasons.includes(props.season) ? "disabled-link" : ""}`} to={`/AYTO-Season8-Simulator/season${props.season}`}>Season {props.season}
                 <Image src={require(`./GroupPhotos/${props.season}.jpg`)} rounded fluid className="group" />
             </Link>
         </Col>

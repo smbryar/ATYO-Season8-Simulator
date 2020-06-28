@@ -11,9 +11,9 @@ function NavBar(props) {
             <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")}/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav onClick={() => setExpanded(false)}>
-                    <Link className="px-3 navlink--AYTO" to="/" >Home</Link>
+                    <Link className="px-3 navlink--AYTO" to="/AYTO-Season8-Simulator" >Home</Link>
                     {props.seasons.map(season => (
-                    <Link key = {season} className={`px-3 navlink--AYTO ${!props.activeSeasons.includes(season) ? "disabled-link" : ""}`} to={`/season${season}`} >Season {season}</Link>
+                    <Link key = {season} className={`px-3 navlink--AYTO ${!props.activeSeasons.includes(season) ? "disabled-link" : ""}`} to={`/AYTO-Season8-Simulator/season${season}`} >Season {season}</Link>
                     ))}
                 </Nav>
             </Navbar.Collapse>
