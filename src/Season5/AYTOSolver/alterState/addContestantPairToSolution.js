@@ -11,20 +11,21 @@ function addContestantPairToSolution(remainingContestants, knownFalses, solution
 
 function choosePairFromContestants(remainingContestants, knownFalses) {
     let woman = chooseContestantFromContestants(remainingContestants.women);
+    remainingContestants.women.splice(remainingContestants.women.indexOf(woman), 1);
     let maleOptions = remainingContestants.men.filter(man => {
         let trialPair = {woman, man};
         return !knownFalses.some(falsePair => doesPairMatch(falsePair, trialPair));
-    })
+    });
     if (maleOptions.length === 0) {
         return false;
     }
-    let man = chooseContestantFromContestants(remainingContestants.men);
+    let man = chooseContestantFromContestants(maleOptions);
+    remainingContestants.men.splice(remainingContestants.men.indexOf(man), 1);
     return {woman, man}
 }
 
 function chooseContestantFromContestants(pool) {
     const contestant = pool[Math.floor(Math.random() * pool.length)];
-    pool.splice(pool.indexOf(contestant), 1);
     return contestant;
 };
 
